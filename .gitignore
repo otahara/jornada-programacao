@@ -1,0 +1,7 @@
+# 🔒 Arquivos privados: nunca vão para o GitHub
+privado/
+CLAUDE.md
+
+# Arquivos gerados automaticamente pelo Python
+__pycache__/
+*.pyc
