@@ -59,7 +59,7 @@ Lê-se **de dentro para fora**: `input` devolve `"5"`, o `int` transforma em `5`
 
 - Decimal usa **ponto**: `2.5` funciona, `2,5` dá erro.
 - Um valor `float` sempre aparece com casa decimal: `5.0`, e não `5`.
-- Às vezes aparece algo como `7.6499999999`. Isso não é erro, é como o computador guarda decimais (a formatação vem no Dia 5).
+- Às vezes aparece algo como `7.6499999999`. Isso não é erro, é como o computador guarda decimais (a formatação vem no Dia 7).
 
 ## Lendo erros
 

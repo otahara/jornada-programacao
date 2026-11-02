@@ -28,7 +28,7 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 3. Projetos reais | arquivos, HTTP, SQL, HTML/CSS, back-end e Docker | ⚪ |
 | ... | o que vier depois vem aqui | |
 
-**Etapa 1:** ▓░░░░░░░░░ 7% (3 de 42 dias)
+**Etapa 1:** ▓░░░░░░░░░ 9% (4 de 43 dias)
 
 ## Progresso
 
@@ -37,6 +37,8 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 1 | Ambiente + Hello World | [dia01](aulas/dia01-ambiente-hello-world/) |
 | 2 | Variáveis | [dia02](aulas/dia02-variaveis/) |
 | 3 | Entrada de dados | [dia03](aulas/dia03-entrada-dados/) |
+| 4 | Git + GitHub (parte 1) | [dia04](aulas/dia04-git-github/) |
+
 
 ## Links
 
