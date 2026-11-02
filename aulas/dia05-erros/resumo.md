@@ -9,7 +9,7 @@ Um dia só de prática: programas curtos **quebrados de propósito** para rodar,
 ## ✅ O que aprendi neste dia
 
 - Ler a mensagem de erro **de baixo para cima**: a última linha diz o nome do erro e o motivo; acima dela vêm o arquivo, a linha e o trecho do código
-- O bloco que começa com `Traceback (most recent call last):` é o relatório do erro ("o mais recente por último")
+- O bloco que começa com `Traceback (most recent call last):` é o relatório do erro ("o mais recente por último"). Quando o código passa por funções, ele mostra uma camada para cada chamada
 - A linha que **quebra** nem sempre é a linha do **problema**: muitas vezes o dado ruim nasceu antes (num `input` sem conversão, numa variável com o valor errado)
 - Com `SyntaxError` **nada roda**; com os outros erros, as linhas anteriores rodam normalmente
 - **Rodar sem erro não quer dizer resultado certo** (`8 / 2.5` pessoas roda, mas não faz sentido)
@@ -32,6 +32,7 @@ Um dia só de prática: programas curtos **quebrados de propósito** para rodar,
 | 4 | `ValueError` | `invalid literal for int() with base 10: 'dois'` | [04-valueerror](04-valueerror/resumo.md) |
 | 5 | `ZeroDivisionError` | `division by zero` | [05-zerodivisionerror](05-zerodivisionerror/resumo.md) |
 | 6 | todos misturados | prever o erro antes de rodar | [06-misturados](06-misturados/resumo.md) |
+| 7 | Traceback | ler a mensagem inteira, inclusive com várias camadas | [07-traceback](07-traceback/resumo.md) |
 
 ## O que cada erro está dizendo (na prática)
 
