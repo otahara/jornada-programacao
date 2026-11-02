@@ -12,8 +12,9 @@
   - a partir do **Dia 4 (Git + GitHub)**, toda sessão termina com o **ritual de fechamento**: `git add`, `git commit` e `git push`, deixando o progresso do dia publicado no GitHub;
   - a partir do **Dia 19 (Debugger)**, quando um laço der resultado estranho, o primeiro passo é rodar com breakpoint;
   - a partir do **Dia 32 (Testes)**, toda função com `return` ganha pelo menos um teste.
+- **Erros novos entram no dia em que podem acontecer (🐞)**, sem aula própria: nesse dia, a pasta da aula ganha uma subpasta `erros/` com programas quebrados para ler, entender e consertar. Os erros básicos (`SyntaxError`, `NameError`, `TypeError`, `ValueError`, `ZeroDivisionError`) são treinados no Dia 5.
 
-Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ ferramenta de programador
+Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ ferramenta de programador · 🐞 erro novo que aparece nesse dia
 
 ---
 
@@ -25,9 +26,9 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 2 | ✅ | Variáveis | o que é uma variável, `=` como "recebe", nomes válidos, teste de mesa | `ex01` a `ex04` + teste de mesa |
 | 3 | ✅ | Entrada de dados | `input`, por que ele sempre devolve texto, converter com `int()` e `float()` | programa que pergunta e responde |
 | 4 | ✅ | 🛠️ **Git + GitHub (parte 1): o ritual diário** | Git × GitHub, `git config`, `git init`, `.gitignore` (o que é público e o que é privado), `status`, `add`, `commit`, `log`, criar o repositório no GitHub, `remote`, `push`; README de apresentação do repositório | Dias 1 a 3 publicados no seu GitHub, com o primeiro commit |
-| 5 | ⚪ | 🔧 **Lendo e corrigindo erros** | treino prático, sem decorar definições: ler a mensagem de baixo para cima, achar a linha onde quebrou e a linha onde o problema começou; `SyntaxError`, `TypeError`, `ValueError` e `NameError` na prática | 10 programas quebrados, consertados |
+| 5 | ✅ | 🔧 **Lendo e corrigindo erros** | treino prático, sem decorar definições: ler a mensagem de baixo para cima, achar a linha onde quebrou e a linha onde o problema começou; `SyntaxError`, `NameError`, `TypeError`, `ValueError` e `ZeroDivisionError` na prática | programas quebrados, consertados (uma pasta por erro) |
 | 6 | ⚪ | Tipos e operadores aritméticos | `int`, `float`, `str`, `bool`, `type()`, `+ - * / // % **` | calculadora de operações |
-| 7 | ⚪ | Trabalhando com texto | concatenação, **f-strings**, `len`, `upper`/`lower` | cartão de apresentação formatado |
+| 7 | ⚪ | Trabalhando com texto | concatenação, **f-strings**, `len`, `upper`/`lower`; 🐞 `AttributeError` | cartão de apresentação formatado |
 | 8 | ⚪ | 🧩 **Mini-projeto 1** | juntar tudo da semana | **Conversor**: moeda, temperatura e distância |
 | 9 | ⚪ | Revisão leve | cola + refazer 1 exercício + `git log` da semana | cola da semana 1 completa |
 
@@ -36,7 +37,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | Dia | Status | Tema | O que você vai aprender | Entrega |
 |---|---|---|---|---|
 | 10 | ⚪ | Comparações | `== != > < >= <=`, valores `True`/`False` | exercícios de "verdadeiro ou falso?" |
-| 11 | ⚪ | `if` / `else` | decisão simples, **indentação**, bloco de código | par ou ímpar, maior de idade |
+| 11 | ⚪ | `if` / `else` | decisão simples, **indentação**, bloco de código; 🐞 `IndentationError` | par ou ímpar, maior de idade |
 | 12 | ⚪ | `elif` | várias condições em sequência, a ordem importa | faixa etária, conceito de nota (A/B/C) |
 | 13 | ⚪ | Operadores lógicos | `and`, `or`, `not`, tabela-verdade | validação de login (usuário **e** senha) |
 | 14 | ⚪ | Treino de decisão | combinar tudo, decisão dentro de decisão | maior de 3 números, triângulo válido |
@@ -60,7 +61,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 
 | Dia | Status | Tema | O que você vai aprender | Entrega |
 |---|---|---|---|---|
-| 25 | ⚪ | Listas (parte 1) | criar, acessar por índice (começa no **0**), índice negativo, `append`, `len` | lista de compras |
+| 25 | ⚪ | Listas (parte 1) | criar, acessar por índice (começa no **0**), índice negativo, `append`, `len`; 🐞 `IndexError` | lista de compras |
 | 26 | ⚪ | Percorrer listas | `for item in lista`, soma, maior e menor | estatísticas de uma lista de notas |
 | 27 | ⚪ | Listas (parte 2) | `in`, `insert`, `remove`, `pop`, `index`, `sort`, fatiamento `[a:b]`; listas são **mutáveis** | fila de atendimento simples (entra no fim, sai do começo) |
 | 28 | ⚪ | Funções (parte 1) | `def`, chamar, parâmetros, por que funções existem | funções de saudação e de conversão |
@@ -74,7 +75,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 |---|---|---|---|---|
 | 32 | ⚪ | 🛠️ **Testes automatizados** | `assert`, por que testar, instalar e rodar o **pytest**, arquivo `test_*.py`, ler um teste que falhou | testes para as funções do Dia 29 |
 | 33 | ⚪ | Problemas clássicos | busca, contagem, filtro (o "kit básico" de todo programador), já com testes | buscar nome, contar aprovados, com pytest |
-| 34 | ⚪ | Dicionários (parte 1) | pares chave → valor, acessar, adicionar, alterar, percorrer | agenda de contatos |
+| 34 | ⚪ | Dicionários (parte 1) | pares chave → valor, acessar, adicionar, alterar, percorrer; 🐞 `KeyError` | agenda de contatos |
 | 35 | ⚪ | Dicionários (parte 2) | `get`, `in`, `items`, `keys`/`values`, **lista de dicionários**, contar frequência | contar palavras de um texto; cadastro de produtos |
 | 36 | ⚪ | Matrizes | lista de listas, linha e coluna | tabuleiro de jogo da velha (só exibir) |
 | 37 | ⚪ | 🛠️ **Git + GitHub (parte 2): além do ritual** | `diff`, voltar atrás (`restore`, `revert`), **branches** e `merge`, `pull` e `clone`, Pull Request, README de projeto | mini-projeto 4 melhorado numa branch e juntado por Pull Request |
