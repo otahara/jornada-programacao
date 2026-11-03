@@ -28,7 +28,7 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 3. Projetos reais | arquivos, HTTP, SQL, HTML/CSS, back-end e Docker | ⚪ |
 | ... | o que vier depois vem aqui | |
 
-**Etapa 1:** ▓░░░░░░░░░ 12% (5 de 43 dias)
+**Etapa 1:** ▓░░░░░░░░░ 14% (6 de 43 dias)
 
 ## Progresso
 
@@ -39,6 +39,7 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 3 | Entrada de dados | [dia03](aulas/dia03-entrada-dados/) |
 | 4 | Git + GitHub (parte 1) | [dia04](aulas/dia04-git-github/) |
 | 5 | Lendo e corrigindo erros | [dia05](aulas/dia05-erros/) |
+| 6 | Tipos e operadores | [dia06](aulas/dia06-tipos-operadores/) |
 
 
 ## Links
