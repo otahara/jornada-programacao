@@ -2,12 +2,105 @@
 
 **Duração:** 43 dias (6 semanas) · **Ritmo:** cerca de 1h por dia
 
+## 🎯 O que você vai fazer durante a Etapa 1
+
+**Em toda sessão (cerca de 1h):**
+1. **Revisão sem consulta** dos dias anteriores, mais um **aquecimento** que leva ao tema novo.
+2. **Exemplo primeiro:** um código pequeno, explicado parte por parte.
+3. **Exercícios que vão escalando**, digitados por você (sem autocompletar com IA) e com a saída exata pedida no enunciado.
+4. **Ritual de fechamento:** `git add`, `git commit` e `git push`, deixando o dia publicado no GitHub.
+
+**Ao longo das 6 semanas (43 dias):**
+
+| Quantidade | O quê | Onde |
+|---|---|---|
+| 30 | dias de conteúdo novo, cada um com uma pasta em `aulas/` (exercícios + `resumo.md`) | todas as semanas |
+| 6 | versões do **Organizador de estudos**, o projeto que cresce com você: uma por semana, só com o que você já aprendeu (veja a seção do projeto, logo abaixo) | Dias 8, 15, 23, 30, 38 e 39 a 42 |
+| 5 | revisões leves: completar a cola (com as suas palavras) e refazer um exercício antigo sem olhar | Dias 9, 16, 24, 31 e 38 |
+| 9 | tipos de erro treinados com programas quebrados para ler e consertar | Dia 5 + os dias marcados com 🐞 |
+| 3 | ferramentas de programador: Git + GitHub, debugger do VS Code e pytest | Dias 4, 19, 32 e 37 |
+| 1 | prova prática sem consulta + retrospectiva | Dia 43 |
+
+## 🏁 Ao concluir a Etapa 1, você vai estar pronto para
+
+Esta é a lista de conferência da prova e da retrospectiva do Dia 43: cada item é marcado só quando você consegue fazer **sem consulta**. Entre parênteses, os dias em que o assunto é ensinado.
+
+**Escrever programas do zero**
+- [ ] Criar um programa que conversa com o usuário: pergunta (`input`), converte para o tipo certo (`int` ou `float`), calcula e mostra o resultado formatado com f-string (Dias 3, 6 e 7).
+- [ ] Fazer o programa **decidir**: `if`, `elif` e `else`, combinando condições com `and`, `or` e `not`, inclusive decisão dentro de decisão (Dias 10 a 14).
+- [ ] Fazer o programa **repetir**: `while` quando não se sabe quantas vezes, `for` com `range` quando se sabe; contadores, acumuladores, `break`, `continue`, laço dentro de laço e menu que repete até o usuário escolher "sair" (Dias 17 a 22).
+- [ ] **Guardar e organizar dados** em listas, dicionários, lista de dicionários e matrizes; percorrer, buscar, contar, filtrar e achar o maior e o menor (Dias 25 a 27 e 33 a 36).
+- [ ] **Organizar o código em funções** com parâmetros e `return`, sabendo quando usar `print` e quando usar `return` (Dias 28 e 29).
+- [ ] Pegar um problema grande, **quebrar em partes pequenas** e planejar em pseudocódigo antes de programar (Dia 39).
+
+**Achar e consertar problemas**
+- [ ] Ler uma mensagem de erro de baixo para cima e achar a linha que quebrou e a linha onde o problema começou (Dia 5).
+- [ ] Reconhecer, na prática, `SyntaxError`, `NameError`, `TypeError`, `ValueError`, `ZeroDivisionError`, `AttributeError`, `IndentationError`, `IndexError` e `KeyError` (Dia 5 e dias com 🐞).
+- [ ] Descobrir por que um programa **roda sem erro, mas dá o resultado errado**: teste de mesa no papel e debugger com breakpoint, linha a linha (Dias 2 e 19).
+- [ ] Escrever testes com pytest para provar que uma função faz o que promete, e entender o que um teste que falhou está dizendo (Dia 32).
+
+**Trabalhar como programador**
+- [ ] Versionar todo o trabalho com Git (`status`, `add`, `commit`, `push`, `log`, `diff`) e voltar atrás quando errar (`restore`, `revert`) (Dias 4 e 37).
+- [ ] Fazer uma melhoria numa branch e juntar ao projeto por Pull Request; baixar um repositório com `clone` (Dia 37).
+- [ ] Mostrar um **portfólio público** no GitHub: os exercícios de todos os dias e o **Organizador de estudos** em repositório próprio, com README, testes e um histórico de commits que mostra a evolução semana a semana.
+
+**Seguir em frente**
+- [ ] Começar a Etapa 2 (estruturas de dados e algoritmos), que parte do princípio de que tudo o que está acima já está firme.
+
+**O que a Etapa 1 ainda não cobre**, para não criar expectativa errada: todos os programas rodam no **terminal** e os dados **somem quando o programa fecha**. Classes ficam para o começo da Etapa 2; ler e gravar arquivos, tratar erros com `try`/`except`, organizar as bibliotecas de um projeto (`venv` e `pip`), banco de dados e páginas web ficam para a Etapa 3.
+
+## 🗂️ O projeto da jornada: Organizador de estudos
+
+Em vez de vários mini-projetos soltos, **um único projeto que cresce do começo ao fim do curso**: um organizador de estudos que registra as sessões, mostra o desempenho e diz o que revisar.
+
+- **Para quem:** qualquer pessoa que estuda para alguma coisa (concurso, faculdade, idioma, programação). Cada pessoa cadastra as **suas** matérias e assuntos; nada fica preso a um tema.
+- **Só com o que já foi aprendido:** cada versão usa apenas o que foi ensinado até aquele dia. Ideias para o futuro vão para uma lista no README do projeto, não para o código.
+- **Repositório próprio:** o projeto ganha um repositório separado no GitHub, criado no Dia 8, para que o histórico de commits conte a evolução dele.
+- **Ele cresce nas três etapas:** na Etapa 1, com o básico de Python; na Etapa 2, cada estrutura de dados entra no projeto **quando faz sentido de verdade** (quando não fizer, ela é treinada só nos exercícios do módulo); na Etapa 3, ele sai do terminal e vira um sistema web.
+
+| Etapa | Versão | O que o Organizador ganha |
+|---|---|---|
+| 1 | v1 (Dia 8) | registrar uma sessão de estudo e mostrar o resumo formatado |
+| 1 | v2 (Dia 15) | classificar o desempenho e conferir a meta do dia |
+| 1 | v3 (Dia 23) | menu que repete e totais do dia |
+| 1 | v4 (Dia 30) | várias sessões em listas, matérias da própria pessoa, código em funções |
+| 1 | v5 (Dias 37 e 38) | sessões como dicionários, total por matéria, testes, trabalho em branch + Pull Request |
+| 1 | **1.0** (Dias 39 a 42) | assuntos personalizados, situação de cada assunto, relatório e quadro da semana |
+| 2 | **2.0** | desfazer, fila de revisões, assuntos com subassuntos, ordenação por desempenho, pré-requisitos entre assuntos e plano de estudos sugerido |
+| 3 | **3.0** | dados salvos de verdade, banco PostgreSQL, telas na web com JavaScript, API própria com testes, segurança, Docker e testes automáticos a cada `push` |
+
+## ✨ Boas práticas desde o primeiro dia
+
+Código que funciona é o **mínimo**. Do primeiro exercício ao projeto, todo código segue as boas práticas de programação em geral e as do Python (que tem um guia oficial de estilo, a **PEP 8**).
+
+- **Cada prática entra quando o assunto aparece** e, a partir dali, vira hábito, como as ferramentas.
+- **Toda correção olha duas coisas:** se o resultado está certo **e** se o código segue as boas práticas. O que pode melhorar é marcado com ✨, sempre com o **porquê**.
+- **Quando houver mais de um jeito de fazer, você aprende qual é o recomendado e por quê.**
+- **Os exercícios antigos ficam como estão**, como registro da jornada. Já o **Organizador de estudos é melhorado** a cada versão com as práticas novas.
+
+| Quando | Boas práticas que entram |
+|---|---|
+| Dias 1 a 5 (já vistas) | nomes descritivos em `snake_case`; commits pequenos com mensagem clara (Conventional Commits); `.gitignore` para o que não deve ser publicado; ler a mensagem de erro antes de mexer no código |
+| Dia 6 | espaço ao redor dos operadores (`total = a + b`); parênteses para deixar a conta clara |
+| Dia 7 | f-string em vez de juntar texto com `+` |
+| Dia 8 | constantes em MAIÚSCULAS (`META_MINUTOS = 120`) em vez de números soltos no meio do código; comentário que explica o **porquê**, não o quê |
+| Dia 11 | indentação de 4 espaços |
+| Dias 12 a 14 | condições fáceis de ler: `if aprovado:` em vez de `if aprovado == True:`; decisão dentro de decisão só quando for necessário |
+| Dias 17 e 18 | nunca confiar no que o usuário digitou: validar antes de usar |
+| Dia 20 | `for` quando se sabe quantas vezes repetir, `while` quando não se sabe |
+| Dias 28 e 29 | funções pequenas que fazem uma coisa só; nome com verbo (`calcular_media`); docstring dizendo o que a função faz; copiou e colou código, vira função; função de cálculo devolve com `return` em vez de imprimir |
+| Dia 32 | `if __name__ == "__main__":`, para que o teste use as funções do arquivo sem rodar o programa inteiro; um teste para cada comportamento, com um nome que diz o que ele confere |
+| Dia 37 | uma branch para cada melhoria; Pull Request com descrição; README de projeto |
+| Dia 39 | planejar antes de programar |
+| Etapa 2 | nomes de classe em `PascalCase`; anotação de tipos (`def media(notas: list[float]) -> float:`); escolher a estrutura de dados pelo custo (Big-O) |
+| Etapa 3 | projeto organizado em pastas e módulos; `venv` e `requirements.txt`; log em vez de `print` para registrar erros; senhas e chaves fora do código; um **verificador automático de estilo** rodando no projeto e no CI |
+
 ### Regras do cronograma
 - **"Dia" é uma sessão de estudo, não um dia do calendário.** Se pular um dia, continue de onde parou. Nada de culpa.
 - **Só avança quando entregar os exercícios do dia.** Se travar, o mesmo dia pode durar duas sessões.
 - **Todo dia começa com revisão sem consulta:** perguntas sobre os dias anteriores **e** um aquecimento (teste de mesa ou exercício básico) que sirva de **ponte para o tema do dia**: o resultado ou a dificuldade dele leva naturalmente ao conceito novo.
 - **O último dia de cada semana é de revisão leve:** reler e completar a **cola** (um caderno de anotações escrito com as suas palavras) e refazer **um** exercício antigo sem olhar. Pode ser curto.
-- **Toda semana termina com um mini-projeto** que junta tudo o que foi visto até ali.
+- **Toda semana tem dia de projeto (🧩):** o Organizador de estudos ganha uma versão nova com o que foi visto naquela semana.
 - **Ferramentas entram aos poucos (🛠️), no momento em que fazem sentido**, e viram hábito a partir dali:
   - a partir do **Dia 4 (Git + GitHub)**, toda sessão termina com o **ritual de fechamento**: `git add`, `git commit` e `git push`, deixando o progresso do dia publicado no GitHub;
   - a partir do **Dia 19 (Debugger)**, quando um laço der resultado estranho, o primeiro passo é rodar com breakpoint;
@@ -29,7 +122,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 5 | ✅ | 🔧 **Lendo e corrigindo erros** | treino prático, sem decorar definições: ler a mensagem de baixo para cima, achar a linha onde quebrou e a linha onde o problema começou; `SyntaxError`, `NameError`, `TypeError`, `ValueError` e `ZeroDivisionError` na prática | programas quebrados, consertados (uma pasta por erro) |
 | 6 | ⚪ | Tipos e operadores aritméticos | `int`, `float`, `str`, `bool`, `type()`, `+ - * / // % **` | calculadora de operações |
 | 7 | ⚪ | Trabalhando com texto | concatenação, **f-strings**, `len`, `upper`/`lower`; 🐞 `AttributeError` | cartão de apresentação formatado |
-| 8 | ⚪ | 🧩 **Mini-projeto 1** | juntar tudo da semana | **Conversor**: moeda, temperatura e distância |
+| 8 | ⚪ | 🧩 **Organizador de estudos v1** | criar o repositório do projeto (repetindo o ritual do Dia 4) e juntar tudo da semana: `input`, tipos, `//` e `%` para transformar minutos em horas, f-strings | **registrar uma sessão de estudo** (matéria, minutos, questões feitas e acertadas) e mostrar o resumo formatado, com horas e percentual de acertos |
 | 9 | ⚪ | Revisão leve | cola + refazer 1 exercício + `git log` da semana | cola da semana 1 completa |
 
 ## Semana 2: Decisão (o programa começa a "pensar")
@@ -41,7 +134,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 12 | ⚪ | `elif` | várias condições em sequência, a ordem importa | faixa etária, conceito de nota (A/B/C) |
 | 13 | ⚪ | Operadores lógicos | `and`, `or`, `not`, tabela-verdade | validação de login (usuário **e** senha) |
 | 14 | ⚪ | Treino de decisão | combinar tudo, decisão dentro de decisão | maior de 3 números, triângulo válido |
-| 15 | ⚪ | 🧩 **Mini-projeto 2** | juntar tudo até aqui | **Calculadora de IMC** com classificação |
+| 15 | ⚪ | 🧩 **Organizador de estudos v2** | decisão aplicada ao projeto | **classificar o desempenho** da sessão (ex.: abaixo de 60% de acertos = revisar logo), conferir a meta de minutos do dia e recusar dados impossíveis (mais acertos do que questões) |
 | 16 | ⚪ | Revisão leve | cola + refazer 1 exercício + `git log` da semana | cola da semana 2 completa |
 
 ## Semana 3: Repetição e debugger (onde a maioria trava, e você não vai travar)
@@ -54,7 +147,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 20 | ⚪ | `for` e `range` | repetir um número conhecido de vezes, `range(início, fim, passo)` | tabuada de um número |
 | 21 | ⚪ | `break` e `continue` | sair do laço antes, pular uma volta | menu que repete até escolher "sair" |
 | 22 | ⚪ | Laços aninhados | laço dentro de laço | tabuada completa de 1 a 10 |
-| 23 | ⚪ | 🧩 **Mini-projeto 3** | juntar tudo até aqui | **Jogo de adivinhação** (número secreto, com dicas e tentativas) |
+| 23 | ⚪ | 🧩 **Organizador de estudos v3** | repetição aplicada ao projeto | **menu que repete** (registrar sessão, ver totais do dia, sair), total de horas e média de acertos do dia, pedir de novo quando a entrada for inválida |
 | 24 | ⚪ | Revisão leve | cola + refazer 1 exercício | cola da semana 3 completa |
 
 ## Semana 4: Listas e funções (organizando o código)
@@ -66,7 +159,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 27 | ⚪ | Listas (parte 2) | `in`, `insert`, `remove`, `pop`, `index`, `sort`, fatiamento `[a:b]`; listas são **mutáveis** | fila de atendimento simples (entra no fim, sai do começo) |
 | 28 | ⚪ | Funções (parte 1) | `def`, chamar, parâmetros, por que funções existem | funções de saudação e de conversão |
 | 29 | ⚪ | Funções (parte 2) | `return`, diferença entre `print` e `return`, escopo | funções de cálculo reaproveitáveis |
-| 30 | ⚪ | 🧩 **Mini-projeto 4** | juntar tudo até aqui | **Lista de tarefas** no terminal, com menu e funções |
+| 30 | ⚪ | 🧩 **Organizador de estudos v4** | listas e funções aplicadas ao projeto | **várias sessões guardadas em listas**, matérias cadastradas pela própria pessoa, código organizado em funções (registrar, relatório, percentual) |
 | 31 | ⚪ | Revisão leve | cola + refazer 1 exercício | cola da semana 4 completa |
 
 ## Semana 5: Testes, dicionários e Git avançado
@@ -78,18 +171,18 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 34 | ⚪ | Dicionários (parte 1) | pares chave → valor, acessar, adicionar, alterar, percorrer; 🐞 `KeyError` | agenda de contatos |
 | 35 | ⚪ | Dicionários (parte 2) | `get`, `in`, `items`, `keys`/`values`, **lista de dicionários**, contar frequência | contar palavras de um texto; cadastro de produtos |
 | 36 | ⚪ | Matrizes | lista de listas, linha e coluna | tabuleiro de jogo da velha (só exibir) |
-| 37 | ⚪ | 🛠️ **Git + GitHub (parte 2): além do ritual** | `diff`, voltar atrás (`restore`, `revert`), **branches** e `merge`, `pull` e `clone`, Pull Request, README de projeto | mini-projeto 4 melhorado numa branch e juntado por Pull Request |
-| 38 | ⚪ | Revisão leve | cola + refazer 1 exercício | cola da semana 5 completa |
+| 37 | ⚪ | 🛠️ **Git + GitHub (parte 2): além do ritual** | `diff`, voltar atrás (`restore`, `revert`), **branches** e `merge`, `pull` e `clone`, Pull Request, README de projeto | uma melhoria pequena no Organizador de estudos, feita numa branch e juntada por Pull Request |
+| 38 | ⚪ | Revisão leve + 🧩 **Organizador de estudos v5** | cola + dicionários e testes aplicados ao projeto, numa branch nova juntada por Pull Request (o projeto faz o papel do "exercício antigo"; o dia pode levar duas sessões) | cola da semana 5 completa + **cada sessão vira um dicionário** (lista de dicionários), total de horas por matéria e testes pytest das funções de cálculo |
 
 ## Semana 6: Fechamento da etapa
 
 | Dia | Status | Tema | O que você vai aprender | Entrega |
 |---|---|---|---|---|
-| 39 | ⚪ | Decompor problemas | quebrar um problema grande em funções pequenas | planejamento do projeto final, em pseudocódigo |
-| 40 | ⚪ | 🏁 **Projeto final (parte 1)** | cadastro (lista de dicionários) | **Sistema de notas**: cadastrar alunos e notas |
-| 41 | ⚪ | 🏁 **Projeto final (parte 2)** | cálculo, com testes pytest | média e situação (aprovado/recuperação/reprovado) |
-| 42 | ⚪ | 🏁 **Projeto final (parte 3)** | relatório + publicação | relatório da turma, melhor aluno, validações, projeto no GitHub |
-| 43 | ⚪ | 🎓 **Prova + retrospectiva** | revisão geral sem consulta | prova prática + detalhar dia a dia a Etapa 2 |
+| 39 | ⚪ | Decompor problemas | quebrar um problema grande em funções pequenas | planejamento do Organizador de estudos 1.0, em pseudocódigo |
+| 40 | ⚪ | 🏁 **Organizador de estudos 1.0 (parte 1)** | cadastro personalizado (lista de dicionários) | **matérias e assuntos** cadastrados pela pessoa, para qualquer tipo de estudo |
+| 41 | ⚪ | 🏁 **Organizador de estudos 1.0 (parte 2)** | cálculo, com testes pytest | desempenho por assunto e situação (dominado / em progresso / revisar) |
+| 42 | ⚪ | 🏁 **Organizador de estudos 1.0 (parte 3)** | relatório + publicação | relatório da semana, quadro dias × matérias (matriz), validações, README do projeto e versão 1.0 publicada no GitHub |
+| 43 | ⚪ | 🎓 **Prova + retrospectiva** | revisão geral sem consulta | prova prática + marcar a lista "pronto para" (no topo) + detalhar dia a dia a Etapa 2 |
 
 ---
 
@@ -98,20 +191,20 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 **Por que:** é a base cobrada em entrevistas técnicas e em provas de concurso, e muda o jeito de pensar em problemas.
 **Duração estimada:** ~45 dias · **O dia a dia será detalhado no Dia 43**, ajustado ao seu ritmo na Etapa 1.
 
-**Hábitos que continuam:** toda estrutura é **implementada por você** (primeiro na mão, depois comparando com o que o Python já oferece), testada com **pytest** e versionada com **Git**.
+**Hábitos que continuam:** toda estrutura é **implementada por você** (primeiro na mão, depois comparando com o que o Python já oferece), testada com **pytest** e versionada com **Git**. E o **Organizador de estudos continua crescendo**: em cada módulo, a estrutura nova entra no projeto (coluna da direita).
 
-| Módulo | Tema | Conteúdo | Exercícios típicos |
-|---|---|---|---|
-| 0 | Preparação: classes básicas | `class`, `__init__`, atributos, métodos, objeto que aponta para outro objeto (o "nó") | classe `ContaBancaria`, classe `No` |
-| 1 | Complexidade (Big-O) | contar passos, O(1), O(n), O(n²), O(log n), por que isso importa | comparar duas soluções do mesmo problema |
-| 2 | Pilha | LIFO, `push`/`pop`/`peek`, implementar com lista | parênteses balanceados, botão "desfazer" |
-| 3 | Fila | FIFO, `enqueue`/`dequeue`, por que `pop(0)` é lento, `collections.deque` | fila de atendimento, fila de impressão |
-| 4 | Recursão | caso base e caso recursivo, **pilha de chamadas**, fatorial, Fibonacci (e por que fica lento: memoização), somar uma lista, inverter texto | desenhar a pilha de chamadas no papel (teste de mesa recursivo) |
-| 5 | Busca e ordenação | busca linear × **busca binária**; bubble, selection e insertion sort; merge sort (recursão em ação) | medir quantas comparações cada um faz |
-| 6 | Lista encadeada | nós ligados, inserir, remover, percorrer (a ponte para árvores) | implementar a pilha e a fila com nós |
-| 7 | Árvores | árvore binária de busca: **inserir, buscar, percorrer** (pré, em e pós-ordem), altura, percurso em largura usando **fila** | dicionário de palavras em árvore |
-| 8 | Grafos | vértices e arestas, representar com dicionário (lista de adjacência), **busca em largura (BFS)** com fila, **busca em profundidade (DFS)** com pilha e com recursão, menor caminho sem peso | rotas entre cidades, amigos em comum |
-| 9 | 🏁 Projeto da etapa | juntar tudo | **Resolvedor de labirinto** (BFS × DFS) com testes |
+| Módulo | Tema | Conteúdo | Exercícios típicos | No Organizador de estudos |
+|---|---|---|---|---|
+| 0 | Preparação: classes básicas | `class`, `__init__`, atributos, métodos, objeto que aponta para outro objeto (o "nó") | classe `ContaBancaria`, classe `No` | sessões e assuntos viram classes (`Sessao`, `Assunto`) no lugar dos dicionários |
+| 1 | Complexidade (Big-O) | contar passos, O(1), O(n), O(n²), O(log n), por que isso importa | comparar duas soluções do mesmo problema | comparar duas formas de achar o assunto com pior desempenho |
+| 2 | Pilha | LIFO, `push`/`pop`/`peek`, implementar com lista | parênteses balanceados, botão "desfazer" | **desfazer** o último registro |
+| 3 | Fila | FIFO, `enqueue`/`dequeue`, por que `pop(0)` é lento, `collections.deque` | fila de atendimento, fila de impressão | **fila de revisões**: o assunto estudado entra no fim e o próximo a revisar sai do começo |
+| 4 | Recursão | caso base e caso recursivo, **pilha de chamadas**, fatorial, Fibonacci (e por que fica lento: memoização), somar uma lista, inverter texto | desenhar a pilha de chamadas no papel (teste de mesa recursivo) | **assuntos com subassuntos** (ex.: matéria → tema → tópico) e o total de horas de um assunto somando todos os de dentro |
+| 5 | Busca e ordenação | busca linear × **busca binária**; bubble, selection e insertion sort; merge sort (recursão em ação) | medir quantas comparações cada um faz | **ordenar** os assuntos pelo desempenho (o pior primeiro) e buscar um assunto pelo nome |
+| 6 | Lista encadeada | nós ligados, inserir, remover, percorrer (a ponte para árvores) | implementar a pilha e a fila com nós | trocar a pilha do "desfazer" e a fila de revisões por versões feitas por você, com nós |
+| 7 | Árvores | árvore binária de busca: **inserir, buscar, percorrer** (pré, em e pós-ordem), altura, percurso em largura usando **fila** | dicionário de palavras em árvore | o conteúdo de estudo (edital, ementa) como **árvore**: exibir com os percursos e buscar assuntos |
+| 8 | Grafos | vértices e arestas, representar com dicionário (lista de adjacência), **busca em largura (BFS)** com fila, **busca em profundidade (DFS)** com pilha e com recursão, menor caminho sem peso | rotas entre cidades, amigos em comum | **pré-requisitos** entre assuntos ("para estudar X, antes preciso de Y") e o menor caminho até um assunto |
+| 9 | 🏁 Projeto da etapa | juntar tudo | | **Organizador de estudos 2.0**: plano de estudos sugerido, que respeita os pré-requisitos e prioriza as revisões dos assuntos com pior desempenho, com testes |
 
 Repare como as peças se encaixam: a **pilha** explica a recursão, a **fila** faz o percurso em largura da árvore e do grafo, e a **recursão** faz o percurso em profundidade.
 
@@ -122,13 +215,31 @@ Repare como as peças se encaixam: a **pilha** explica a recursão, a **fila** f
 **Por que:** sair do terminal e construir um sistema com tudo que um projeto de verdade tem.
 **Será detalhada no fim da Etapa 2.**
 
-| Módulo | Tema | Conteúdo |
-|---|---|---|
-| 1 | Projeto Python de verdade | estrutura de pastas, módulos e `import`, ambiente virtual (`venv`), `pip` e `requirements.txt`, tratamento de erros (`try`/`except`) |
-| 2 | Arquivos e dados | ler e escrever arquivos, CSV, **JSON** |
-| 3 | HTTP | como a web funciona: requisição e resposta, métodos (GET, POST...), status (200, 404, 500), consumir uma API pública com `requests` |
-| 4 | SQL | banco relacional, tabelas, `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `JOIN`, começando com **SQLite** e usando pelo Python |
-| 5 | HTML e CSS | estrutura de uma página, formulários, estilo, layout básico |
-| 6 | Back-end | criar a sua própria API (Flask ou FastAPI) ligando HTTP + SQL + HTML |
-| 7 | Docker | imagem, container, `Dockerfile`, subir app + banco com `docker compose` |
-| 8 | 🏁 Projeto final | um sistema completo, versionado no GitHub, com testes, README e rodando em Docker |
+| Módulo | Tema | Conteúdo | No Organizador de estudos |
+|---|---|---|---|
+| 1 | Projeto Python de verdade | estrutura de pastas, módulos e `import`, ambiente virtual (`venv`), `pip` e `requirements.txt`, tratamento de erros (`try`/`except`), **logs** (registrar o que aconteceu e o que deu errado), verificador automático de estilo (PEP 8) | o projeto é dividido em pastas e módulos, entradas inválidas são tratadas com `try`/`except` e os erros ficam registrados num log |
+| 2 | Arquivos e dados | ler e escrever arquivos, CSV, **JSON** | os dados são salvos em JSON e **param de sumir** quando o programa fecha; relatório exportado em CSV |
+| 3 | HTTP | como a web funciona: requisição e resposta, métodos (GET, POST...), status (200, 404, 500), consumir uma API pública com `requests` | buscar dados de uma API pública (ex.: feriados, para montar o calendário de revisões) |
+| 4 | SQL com **PostgreSQL** | banco relacional, instalar o PostgreSQL, tabelas, `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `JOIN`, usar o banco pelo Python; o SQL aprendido aqui vale, quase igual, para os outros bancos | o JSON é trocado por um banco PostgreSQL |
+| 5 | Front-end (parte 1): HTML e CSS | estrutura de uma página, formulários, estilo, layout que funciona também no **celular** | as telas do organizador |
+| 6 | Back-end | criar a sua própria API (Flask ou FastAPI) ligando HTTP + SQL + HTML; **migrações** (mudar as tabelas sem perder dados); **testes da API** com pytest | a API do organizador, ligando as telas ao banco, com testes |
+| 7 | Front-end (parte 2): **JavaScript** | a linguagem que roda no navegador: a lógica é a mesma do Python, muda a escrita; mexer na página, reagir a cliques, chamar a sua própria API | telas que respondem na hora, sem recarregar a página |
+| 8 | 🔒 **Segurança** | senhas e chaves **fora do código** (variáveis de ambiente), validar tudo no back-end, os ataques mais comuns (SQL injection, XSS) e como se proteger | revisão de segurança do organizador inteiro |
+| 9 | Docker | imagem, container, `Dockerfile`, subir app + banco com `docker compose` | o organizador e o PostgreSQL rodando com `docker compose` |
+| 10 | **CI** (integração contínua) | o GitHub roda os testes e o verificador de estilo sozinho a cada `push` e avisa quando algo quebrou (GitHub Actions) | todo `push` do organizador passa pelos testes e pela verificação de estilo automaticamente |
+| 11 | 🏁 Projeto final | um sistema completo, versionado no GitHub, com testes rodando no CI, README e rodando em Docker | **Organizador de estudos 3.0** na web |
+
+---
+
+# Etapa 4: SaaS (esboço)
+
+**Por que:** transformar um sistema web num **serviço de verdade**, usado por outras pessoas pela internet. O produto ainda não está definido: pode ser o Organizador de estudos ou outra ideia.
+**Será detalhada no fim da Etapa 3.**
+
+| Tema | Conteúdo |
+|---|---|
+| Usuários | criar conta, login, senhas guardadas com hash, cada pessoa vendo só os seus dados, recuperar a senha por e-mail |
+| Hospedagem | colocar o sistema na internet, domínio próprio, conexão protegida (HTTPS) |
+| Pagamento | planos e assinatura |
+| Lei e privacidade | LGPD, política de privacidade e termos de uso |
+| Manter vivo | backup do banco, monitorar erros e desempenho, e-mails automáticos (ex.: lembrete de revisão) |

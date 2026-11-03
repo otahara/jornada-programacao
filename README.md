@@ -7,7 +7,7 @@ Quero poder olhar para trás e ver cada tijolo construído. Pode parecer bobo pa
 
 ## Sobre mim
 
-Sou **Engenheiro da Computação**, formado em 2018, mas nunca trabalhei formalmente como desenvolvedor. Passei esses anos em outras áreas: contabilidade, comercial e vendas, e também tentei ter minha própria empresa.
+Sou **Engenheiro da Computação**, formado em 2018, mas nunca trabalhei formalmente como desenvolvedor. Passei esses anos em outras áreas: contabilidade, comercial e vendas, e também tentei ter minha própria empresa no ramo de materiais para construção.
 
 ## Por que estou estudando
 
