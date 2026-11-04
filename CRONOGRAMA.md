@@ -45,9 +45,9 @@ Esta é a lista de conferência da prova e da retrospectiva do Dia 43: cada item
 - [ ] Mostrar um **portfólio público** no GitHub: os exercícios de todos os dias e o **Organizador de estudos** em repositório próprio, com README, testes e um histórico de commits que mostra a evolução semana a semana.
 
 **Seguir em frente**
-- [ ] Começar a Etapa 2 (estruturas de dados e algoritmos), que parte do princípio de que tudo o que está acima já está firme.
+- [ ] Começar a Etapa 2 (Orientação a Objetos), que parte do princípio de que tudo o que está acima já está firme.
 
-**O que a Etapa 1 ainda não cobre**, para não criar expectativa errada: todos os programas rodam no **terminal** e os dados **somem quando o programa fecha**. Classes ficam para o começo da Etapa 2; ler e gravar arquivos, tratar erros com `try`/`except`, organizar as bibliotecas de um projeto (`venv` e `pip`), banco de dados e páginas web ficam para a Etapa 3.
+**O que a Etapa 1 ainda não cobre**, para não criar expectativa errada: todos os programas rodam no **terminal** e os dados **somem quando o programa fecha**. Classes e o tratamento básico de erros com `try`/`except` ficam para a Etapa 2; pilha, fila, árvores, grafos e os algoritmos clássicos, para a Etapa 3; ler e gravar arquivos, organizar as bibliotecas de um projeto (`venv` e `pip`), banco de dados e páginas web, para a Etapa 4.
 
 ## 🗂️ O projeto da jornada: Organizador de estudos
 
@@ -56,7 +56,7 @@ Em vez de vários mini-projetos soltos, **um único projeto que cresce do começ
 - **Para quem:** qualquer pessoa que estuda para alguma coisa (concurso, faculdade, idioma, programação). Cada pessoa cadastra as **suas** matérias e assuntos; nada fica preso a um tema.
 - **Só com o que já foi aprendido:** cada versão usa apenas o que foi ensinado até aquele dia. Ideias para o futuro vão para uma lista no README do projeto, não para o código.
 - **Repositório próprio:** o projeto ganha um repositório separado no GitHub, criado no Dia 8, para que o histórico de commits conte a evolução dele.
-- **Ele cresce nas três etapas:** na Etapa 1, com o básico de Python; na Etapa 2, cada estrutura de dados entra no projeto **quando faz sentido de verdade** (quando não fizer, ela é treinada só nos exercícios do módulo); na Etapa 3, ele sai do terminal e vira um sistema web.
+- **Ele cresce nas quatro etapas:** na Etapa 1, com o básico de Python; na Etapa 2, os dicionários viram classes; nas Etapas 2 e 3, cada conceito e cada estrutura de dados entram no projeto **quando fazem sentido de verdade** (quando não fizerem, são treinados só nos exercícios do módulo); na Etapa 4, ele sai do terminal e vira um sistema web.
 
 | Etapa | Versão | O que o Organizador ganha |
 |---|---|---|
@@ -66,8 +66,9 @@ Em vez de vários mini-projetos soltos, **um único projeto que cresce do começ
 | 1 | v4 (Dia 30) | várias sessões em listas, matérias da própria pessoa, código em funções |
 | 1 | v5 (Dias 37 e 38) | sessões como dicionários, total por matéria, testes, trabalho em branch + Pull Request |
 | 1 | **1.0** (Dias 39 a 42) | assuntos personalizados, situação de cada assunto, relatório e quadro da semana |
-| 2 | **2.0** | desfazer, fila de revisões, assuntos com subassuntos, ordenação por desempenho, pré-requisitos entre assuntos e plano de estudos sugerido |
-| 3 | **3.0** | dados salvos de verdade, banco PostgreSQL, telas na web com JavaScript, API própria com testes, segurança, Docker e testes automáticos a cada `push` |
+| 2 | **2.0** | classes no lugar dos dicionários, sessões de tipos diferentes (questões e leitura), correção de sessões, dados validados e testes refeitos |
+| 3 | **3.0** | desfazer, fila de revisões, assuntos com subassuntos, ordenação por desempenho, pré-requisitos entre assuntos e plano de estudos sugerido |
+| 4 | **4.0** | dados salvos de verdade, banco PostgreSQL, telas na web com JavaScript, API própria com testes, segurança, Docker e testes automáticos a cada `push` |
 
 ## ✨ Boas práticas desde o primeiro dia
 
@@ -92,8 +93,9 @@ Código que funciona é o **mínimo**. Do primeiro exercício ao projeto, todo c
 | Dia 32 | `if __name__ == "__main__":`, para que o teste use as funções do arquivo sem rodar o programa inteiro; um teste para cada comportamento, com um nome que diz o que ele confere |
 | Dia 37 | uma branch para cada melhoria; Pull Request com descrição; README de projeto |
 | Dia 39 | planejar antes de programar |
-| Etapa 2 | nomes de classe em `PascalCase`; anotação de tipos (`def media(notas: list[float]) -> float:`); escolher a estrutura de dados pelo custo (Big-O) |
-| Etapa 3 | projeto organizado em pastas e módulos; `venv` e `requirements.txt`; log em vez de `print` para registrar erros; senhas e chaves fora do código; um **verificador automático de estilo** rodando no projeto e no CI |
+| Etapa 2 | nomes de classe em `PascalCase`; anotação de tipos (`def media(notas: list[float]) -> float:`); uma classe com uma responsabilidade só; criar todos os atributos no `__init__`; atributo simples até precisar de regra, e só então `@property`; `__repr__` que ajude a depurar; levantar o erro mais específico e nunca usar `except` sem dizer qual erro; herança só quando for mesmo "é um" |
+| Etapa 3 | escolher a estrutura de dados pelo custo (Big-O) |
+| Etapa 4 | projeto organizado em pastas e módulos; `venv` e `requirements.txt`; log em vez de `print` para registrar erros; senhas e chaves fora do código; um **verificador automático de estilo** rodando no projeto e no CI |
 
 ### Regras do cronograma
 - **"Dia" é uma sessão de estudo, não um dia do calendário.** Se pular um dia, continue de onde parou. Nada de culpa.
@@ -106,6 +108,25 @@ Código que funciona é o **mínimo**. Do primeiro exercício ao projeto, todo c
   - a partir do **Dia 19 (Debugger)**, quando um laço der resultado estranho, o primeiro passo é rodar com breakpoint;
   - a partir do **Dia 32 (Testes)**, toda função com `return` ganha pelo menos um teste.
 - **Erros novos entram no dia em que podem acontecer (🐞)**, sem aula própria: nesse dia, a pasta da aula ganha uma subpasta `erros/` com programas quebrados para ler, entender e consertar. Os erros básicos (`SyntaxError`, `NameError`, `TypeError`, `ValueError`, `ZeroDivisionError`) são treinados no Dia 5.
+- **Cada etapa tem um repositório novo e uma pasta nova**, ao lado da pasta da etapa anterior, nunca dentro dela. O repositório anterior continua público, como registro da jornada, e só recebe os links de navegação (veja abaixo). O **Organizador de estudos** fica no repositório próprio dele, que não muda de etapa para etapa, para o histórico de commits contar a evolução.
+- **No último dia de cada etapa, a IA monta um kit de passagem** para o repositório novo, levando só o que importa:
+  - `CLAUDE.md` com as regras permanentes (boas práticas, estrela e alerta), sem o histórico de quando e por que cada regra nasceu, mais as notas da memória da IA que ainda valerem, porque essa memória fica presa à pasta antiga;
+  - diário novo e enxuto: quem é o aluno, método de ensino, organização da pasta e um **Ponto de partida** (a lista "pronto para" marcada, as boas práticas que já podem ser cobradas, os assuntos em alerta 🚨 e as observações sobre o aluno que continuam valendo), sem detalhes aula por aula;
+  - painel de atenção só com os alertas abertos, com os links trocados pelos endereços do repositório antigo no GitHub;
+  - `CRONOGRAMA.md` só da etapa nova, com um resumo de uma linha por etapa (as anteriores com link para o repositório delas, as futuras como esboço);
+  - `ETAPAS-FUTURAS.md` com os rascunhos detalhados das próximas etapas, lido só no último dia da etapa;
+  - README novo, com a navegação entre as etapas.
+  
+  A cola fica na pasta da etapa em que foi escrita e não é copiada nem resumida.
+- **O kit é montado na pasta nova do computador**, porque a pasta `privado/` não vai para o GitHub. O `.gitignore` novo continua escondendo `privado/` e `CLAUDE.md`. Antes de fechar a etapa, a IA lembra de fazer o **backup** da pasta `privado/` da etapa que terminou: é a única cópia da cola.
+- **Na pasta nova, a IA lê só os arquivos daquela pasta** e não busca nada no repositório antigo, a não ser que o aluno peça. Os links entre os repositórios são para as pessoas navegarem.
+- **Os repositórios conversam entre si, nos dois sentidos**, sempre com o endereço completo do GitHub, porque um link relativo não sai do próprio repositório:
+  - **README de cada etapa:** no topo, a linha `⬅️ Etapa anterior · ➡️ Próxima etapa`; na seção "A jornada", a mesma tabela em todos os repositórios, com o link de cada etapa e a indicação de qual é a atual;
+  - **Topo do `CRONOGRAMA.md` de cada etapa:** a mesma navegação;
+  - **Última e primeira aula:** o `resumo.md` do último dia aponta para o primeiro dia da etapa seguinte, e o do primeiro dia aponta de volta;
+  - **Conceito retomado:** quando um `resumo.md` usa algo de outra etapa, ele traz o link para a aula em que o assunto foi ensinado;
+  - **Organizador de estudos:** o README dele tem uma tabela com cada versão e a etapa em que ela nasceu, com link, e o README de cada etapa aponta para o Organizador;
+  - **Ordem no último dia:** criar o repositório novo no GitHub (para ter o endereço), fazer no repositório antigo um último commit só com os links para a etapa nova, montar o kit e fazer o backup.
 
 Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ ferramenta de programador · 🐞 erro novo que aparece nesse dia
 
@@ -182,42 +203,66 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 40 | ⚪ | 🏁 **Organizador de estudos 1.0 (parte 1)** | cadastro personalizado (lista de dicionários) | **matérias e assuntos** cadastrados pela pessoa, para qualquer tipo de estudo |
 | 41 | ⚪ | 🏁 **Organizador de estudos 1.0 (parte 2)** | cálculo, com testes pytest | desempenho por assunto e situação (dominado / em progresso / revisar) |
 | 42 | ⚪ | 🏁 **Organizador de estudos 1.0 (parte 3)** | relatório + publicação | relatório da semana, quadro dias × matérias (matriz), validações, README do projeto e versão 1.0 publicada no GitHub |
-| 43 | ⚪ | 🎓 **Prova + retrospectiva** | revisão geral sem consulta | prova prática + marcar a lista "pronto para" (no topo) + detalhar dia a dia a Etapa 2 |
+| 43 | ⚪ | 🎓 **Prova + retrospectiva** | revisão geral sem consulta | prova prática + marcar a lista "pronto para" (no topo) + detalhar dia a dia a Etapa 2 (Orientação a Objetos) + montar o kit de passagem para a Etapa 2 (o dia pode levar duas sessões) |
 
 ---
 
-# Etapa 2: Estruturas de dados e algoritmos (rascunho)
+# Etapa 2: Orientação a Objetos (rascunho)
+
+**Por que:** organizar programas maiores juntando dados e comportamento, e preparar a Etapa 3, em que cada estrutura de dados é uma classe.
+**Duração estimada:** ~40 dias (cerca de 6 semanas, com as revisões leves) · **O dia a dia será detalhado no Dia 43**, ajustado ao seu ritmo na Etapa 1.
+
+**Hábitos que continuam:** todo método com regra ganha teste no **pytest**; **Git** em toda sessão, com branch e Pull Request em cada melhoria do projeto; o **debugger** mostra os atributos do objeto no painel de variáveis; e toda correção segue olhando resultado e **boas práticas**. O **Organizador de estudos troca os dicionários por classes**: cada conceito entra no projeto quando faz sentido de verdade; quando não faz, é treinado só nos exercícios do módulo.
+
+| Módulo | Tema | Conteúdo | Exercícios típicos | No Organizador de estudos |
+|---|---|---|---|---|
+| 1 | Classe e objeto | classe × objeto, `__init__`, `self`, atributos, métodos, parâmetro com valor padrão, `PascalCase`, anotação de tipos | `Livro`, depois `ContaBancaria` com `depositar`. 🐞 `TypeError` por faltar o `self` ou um argumento; `AttributeError` por escrever `nome = nome` sem `self` | `Sessao` substitui o dicionário da sessão, com `percentual()` |
+| 2 | Objetos juntos | lista de objetos, objeto guardando outros objetos | `Turma` com vários `Aluno` e a média da turma. 🐞 `AttributeError` por pedir `.nome` à lista; `print` que mostra `<__main__.Aluno object at 0x...>` (a ponte para o Módulo 4) | `Assunto` guarda sessões e `Materia` guarda assuntos; acaba a lista de dicionários |
+| 3 | Atributo de instância × atributo de classe | quando o valor é de cada objeto e quando é de todos | `Funcionario` com a empresa em comum; contador de objetos criados. 🐞 sem mensagem de erro: lista como atributo de classe, compartilhada por todos os objetos | limites da situação (`LIMITE_REVISAR`) como atributos de classe de `Assunto` |
+| 4 | Métodos especiais | `__str__`, `__repr__`, `__eq__` | `Produto` com `print` legível; `Aluno` igual por matrícula. 🐞 `TypeError` porque o `__str__` não devolveu texto; `TypeError: unhashable type` depois de criar o `__eq__` | `__str__` no lugar das funções de exibir; `__eq__` recusa "matemática" quando "Matemática" já existe |
+| 5 | Levantar e tratar erros | `raise`, `try`/`except` básico, `pytest.raises` | `sacar` acima do saldo levanta `ValueError`; o menu trata e pergunta de novo. 🐞 sem mensagem de erro: `try` grande demais, que esconde o erro verdadeiro | `Sessao` recusa dados impossíveis (mais acertos do que questões) e o menu trata o erro |
+| 6 | Encapsulamento | convenção do `_` e do `__`, `@property`, setter com validação | `Termometro` que recusa valor abaixo do zero absoluto; `saldo` só para leitura. 🐞 `AttributeError` em `__saldo` e em property sem setter; `RecursionError` do setter que chama a si mesmo (só reconhecer) | `percentual` vira property; nova opção "corrigir sessão", validada pelo setter; `_sessoes` passa a ser interno |
+| 7 | `@classmethod` e `@staticmethod` | outra forma de criar o objeto; função que pertence ao assunto da classe; quando uma função comum é melhor | `Temperatura.de_fahrenheit(212)`, `Data.de_texto("04/11/2026")`, `Data.eh_bissexto(2028)`. 🐞 `TypeError` por esquecer o `cls` ou o decorador | `Sessao.de_horas(...)`; o `@staticmethod` fica só nos exercícios, porque no projeto uma função comum resolve |
+| 8 | Herança e `super()` | classe filha, sobrescrever método, `super()`, exceção própria como exemplo; retomar o `cls` do Módulo 7 | `Funcionario` e `Gerente`; `Veiculo` e `Moto`. 🐞 `AttributeError` por esquecer o `super().__init__()`; `TypeError` por faltar argumento no `super()` | `SessaoDeQuestoes` e `SessaoDeLeitura`: agora dá para registrar videoaula ou leitura, sem questões |
+| 9 | Polimorfismo | o mesmo método se comportando diferente em cada classe; `isinstance` e por que evitá-lo | `area()` em várias formas; folha de pagamento com tipos misturados. 🐞 `AttributeError` quando uma classe não tem o método | o relatório chama `sessao.resumo()` sem um `if` para cada tipo |
+| 10 | Classes abstratas com `abc` | `ABC`, `@abstractmethod`, obrigar as classes filhas a implementar um método | `Pagamento` com `Pix` e `Cartao`. 🐞 `TypeError: Can't instantiate abstract class` | `Sessao` vira abstrata: toda sessão é de um tipo |
+| 11 | Composição × herança | "é um" × "tem um", como decidir | `Carro` tem `Motor`; `Playlist` herdando de `list` × guardando uma lista. 🐞 sem mensagem de erro: métodos herdados de `list` furam a regra da playlist | `Organizador` guarda as matérias; `Relatorio` sai dele (uma responsabilidade só) |
+| 12 | Dataclasses | `@dataclass`, `field(default_factory=list)`, `__post_init__`; comparar com a versão escrita à mão | reescrever `Produto` e contar as linhas. 🐞 `ValueError` por lista como valor padrão; `TypeError` por campo sem padrão depois de campo com padrão | só `Materia` vira dataclass; `Sessao` continua como está por causa dos setters, e essa comparação é a lição |
+| 13 | 🏁 Projeto da etapa | juntar tudo, numa branch com Pull Request | | **Organizador de estudos 2.0**: por dentro, tudo em classes; por fora, sessões de questões e de leitura, correção de sessões e recusa de assunto repetido; os testes garantem que o que já funcionava continua funcionando |
+
+---
+
+# Etapa 3: Estruturas de dados e algoritmos (rascunho)
 
 **Por que:** é a base cobrada em entrevistas técnicas e em provas de concurso, e muda o jeito de pensar em problemas.
-**Duração estimada:** ~45 dias · **O dia a dia será detalhado no Dia 43**, ajustado ao seu ritmo na Etapa 1.
+**Duração estimada:** ~42 dias · **O dia a dia será detalhado no fim da Etapa 2**, ajustado ao seu ritmo até ali.
 
 **Hábitos que continuam:** toda estrutura é **implementada por você** (primeiro na mão, depois comparando com o que o Python já oferece), testada com **pytest** e versionada com **Git**. E o **Organizador de estudos continua crescendo**: em cada módulo, a estrutura nova entra no projeto (coluna da direita).
 
 | Módulo | Tema | Conteúdo | Exercícios típicos | No Organizador de estudos |
 |---|---|---|---|---|
-| 0 | Preparação: classes básicas | `class`, `__init__`, atributos, métodos, objeto que aponta para outro objeto (o "nó") | classe `ContaBancaria`, classe `No` | sessões e assuntos viram classes (`Sessao`, `Assunto`) no lugar dos dicionários |
 | 1 | Complexidade (Big-O) | contar passos, O(1), O(n), O(n²), O(log n), por que isso importa | comparar duas soluções do mesmo problema | comparar duas formas de achar o assunto com pior desempenho |
 | 2 | Pilha | LIFO, `push`/`pop`/`peek`, implementar com lista | parênteses balanceados, botão "desfazer" | **desfazer** o último registro |
 | 3 | Fila | FIFO, `enqueue`/`dequeue`, por que `pop(0)` é lento, `collections.deque` | fila de atendimento, fila de impressão | **fila de revisões**: o assunto estudado entra no fim e o próximo a revisar sai do começo |
 | 4 | Recursão | caso base e caso recursivo, **pilha de chamadas**, fatorial, Fibonacci (e por que fica lento: memoização), somar uma lista, inverter texto | desenhar a pilha de chamadas no papel (teste de mesa recursivo) | **assuntos com subassuntos** (ex.: matéria → tema → tópico) e o total de horas de um assunto somando todos os de dentro |
 | 5 | Busca e ordenação | busca linear × **busca binária**; bubble, selection e insertion sort; merge sort (recursão em ação) | medir quantas comparações cada um faz | **ordenar** os assuntos pelo desempenho (o pior primeiro) e buscar um assunto pelo nome |
-| 6 | Lista encadeada | nós ligados, inserir, remover, percorrer (a ponte para árvores) | implementar a pilha e a fila com nós | trocar a pilha do "desfazer" e a fila de revisões por versões feitas por você, com nós |
+| 6 | Lista encadeada | a classe `No`, o objeto que aponta para outro objeto, nós ligados, inserir, remover, percorrer (a ponte para árvores) | implementar a pilha e a fila com nós | trocar a pilha do "desfazer" e a fila de revisões por versões feitas por você, com nós |
 | 7 | Árvores | árvore binária de busca: **inserir, buscar, percorrer** (pré, em e pós-ordem), altura, percurso em largura usando **fila** | dicionário de palavras em árvore | o conteúdo de estudo (edital, ementa) como **árvore**: exibir com os percursos e buscar assuntos |
 | 8 | Grafos | vértices e arestas, representar com dicionário (lista de adjacência), **busca em largura (BFS)** com fila, **busca em profundidade (DFS)** com pilha e com recursão, menor caminho sem peso | rotas entre cidades, amigos em comum | **pré-requisitos** entre assuntos ("para estudar X, antes preciso de Y") e o menor caminho até um assunto |
-| 9 | 🏁 Projeto da etapa | juntar tudo | | **Organizador de estudos 2.0**: plano de estudos sugerido, que respeita os pré-requisitos e prioriza as revisões dos assuntos com pior desempenho, com testes |
+| 9 | 🏁 Projeto da etapa | juntar tudo | | **Organizador de estudos 3.0**: plano de estudos sugerido, que respeita os pré-requisitos e prioriza as revisões dos assuntos com pior desempenho, com testes |
 
-Repare como as peças se encaixam: a **pilha** explica a recursão, a **fila** faz o percurso em largura da árvore e do grafo, e a **recursão** faz o percurso em profundidade.
+Repare como as peças se encaixam: cada estrutura é uma **classe** (Etapa 2), a **pilha** explica a recursão, a **fila** faz o percurso em largura da árvore e do grafo, e a **recursão** faz o percurso em profundidade.
 
 ---
 
-# Etapa 3: Projetos reais (esboço)
+# Etapa 4: Projetos reais (esboço)
 
 **Por que:** sair do terminal e construir um sistema com tudo que um projeto de verdade tem.
-**Será detalhada no fim da Etapa 2.**
+**Será detalhada no fim da Etapa 3.**
 
 | Módulo | Tema | Conteúdo | No Organizador de estudos |
 |---|---|---|---|
-| 1 | Projeto Python de verdade | estrutura de pastas, módulos e `import`, ambiente virtual (`venv`), `pip` e `requirements.txt`, tratamento de erros (`try`/`except`), **logs** (registrar o que aconteceu e o que deu errado), verificador automático de estilo (PEP 8) | o projeto é dividido em pastas e módulos, entradas inválidas são tratadas com `try`/`except` e os erros ficam registrados num log |
+| 1 | Projeto Python de verdade | estrutura de pastas, módulos e `import`, ambiente virtual (`venv`), `pip` e `requirements.txt`, tratamento de erros em um projeto maior (o `try`/`except` básico vem da Etapa 2), **logs** (registrar o que aconteceu e o que deu errado), verificador automático de estilo (PEP 8) | o projeto é dividido em pastas e módulos, e os erros tratados ficam registrados num log |
 | 2 | Arquivos e dados | ler e escrever arquivos, CSV, **JSON** | os dados são salvos em JSON e **param de sumir** quando o programa fecha; relatório exportado em CSV |
 | 3 | HTTP | como a web funciona: requisição e resposta, métodos (GET, POST...), status (200, 404, 500), consumir uma API pública com `requests` | buscar dados de uma API pública (ex.: feriados, para montar o calendário de revisões) |
 | 4 | SQL com **PostgreSQL** | banco relacional, instalar o PostgreSQL, tabelas, `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `JOIN`, usar o banco pelo Python; o SQL aprendido aqui vale, quase igual, para os outros bancos | o JSON é trocado por um banco PostgreSQL |
@@ -227,14 +272,14 @@ Repare como as peças se encaixam: a **pilha** explica a recursão, a **fila** f
 | 8 | 🔒 **Segurança** | senhas e chaves **fora do código** (variáveis de ambiente), validar tudo no back-end, os ataques mais comuns (SQL injection, XSS) e como se proteger | revisão de segurança do organizador inteiro |
 | 9 | Docker | imagem, container, `Dockerfile`, subir app + banco com `docker compose` | o organizador e o PostgreSQL rodando com `docker compose` |
 | 10 | **CI** (integração contínua) | o GitHub roda os testes e o verificador de estilo sozinho a cada `push` e avisa quando algo quebrou (GitHub Actions) | todo `push` do organizador passa pelos testes e pela verificação de estilo automaticamente |
-| 11 | 🏁 Projeto final | um sistema completo, versionado no GitHub, com testes rodando no CI, README e rodando em Docker | **Organizador de estudos 3.0** na web |
+| 11 | 🏁 Projeto final | um sistema completo, versionado no GitHub, com testes rodando no CI, README e rodando em Docker | **Organizador de estudos 4.0** na web |
 
 ---
 
-# Etapa 4: SaaS (esboço)
+# Etapa 5: SaaS (esboço)
 
 **Por que:** transformar um sistema web num **serviço de verdade**, usado por outras pessoas pela internet. O produto ainda não está definido: pode ser o Organizador de estudos ou outra ideia.
-**Será detalhada no fim da Etapa 3.**
+**Será detalhada no fim da Etapa 4.**
 
 | Tema | Conteúdo |
 |---|---|

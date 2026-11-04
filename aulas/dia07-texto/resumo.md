@@ -139,7 +139,7 @@ Com `nome`, `idade` e `altura`, mostrar `Ana tem 30 anos e 1.65 m de altura.` em
 | `print(f"Total: {preco * quantidade}")` | `Total: 37.5` | ✅ |
 | `print("Produto: {produto}")` | `Produto: caderno` | ❌ sem o `f`, sai `Produto: {produto}` |
 
-**Termo:** eu não conhecia f-string. Foi para o dicionário.
+**Termo:** eu não conhecia f-string.
 
 **`ex01`** ✅ saída exata, com uma f-string e a conta dentro das chaves. **Fui além:** testei `{altura}m` no `exemplo.py`.
 
@@ -151,7 +151,7 @@ Com `nome`, `idade` e `altura`, mostrar `Ana tem 30 anos e 1.65 m de altura.` em
 | `print(nome.upper())` | `ANA MARIA` | ✅ |
 | `print(f"{nome.lower()} tem {len(nome)} caracteres")` | `ana maria tem 9 caracteres` | ✅ |
 
-**Termo:** eu não sabia o que é método. Foi para o dicionário.
+**Termo:** eu não sabia o que é método.
 
 **`ex02`** ⚠️ → ✅ Primeiro saiu `Maiúscula:` e `Minúscula:`, sem o `s` pedido. Consertei.
 
@@ -177,7 +177,7 @@ Com `nome`, `idade` e `altura`, mostrar `Ana tem 30 anos e 1.65 m de altura.` em
 
 ⚠️ → ✅ **O diagnóstico estava certo, mas o conserto não.** O erro sumiu e a saída foi `5`, não `BRUNO`. Excluí a linha 2, e a saída ficou certa. A dica do professor ("o que precisa mudar nela") dava a entender que a linha 2 tinha que continuar. Também daria para mantê-la, guardando a quantidade em outra variável, mas nada usaria esse valor.
 
-**Termos:** eu não sabia o que são objeto e atributo. Foram para o dicionário.
+**Termos:** eu não sabia o que são objeto e atributo.
 
 ### Entrega: `ex03`, o cartão de apresentação
 

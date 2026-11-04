@@ -21,12 +21,13 @@ Porque é o maior compromisso que eu posso assumir comigo mesmo, e me ajuda a to
 
 A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quantas virão depois.
 
-| Etapa | Conteúdo | Status |
-|---|---|---|
-| 1. Fundamentos | lógica de programação com Python, Git, debugger e testes | 🟡 em andamento |
-| 2. Estruturas de dados e algoritmos | pilha, fila, recursão, ordenação, árvores e grafos | ⚪ |
-| 3. Projetos reais | arquivos, HTTP, SQL, HTML/CSS, back-end e Docker | ⚪ |
-| ... | o que vier depois vem aqui | |
+| Etapa | Conteúdo | Status | Onde |
+|---|---|---|---|
+| 1. Fundamentos | lógica de programação com Python, Git, debugger e testes | 🟡 em andamento | 📍 você está aqui |
+| 2. Orientação a Objetos | classes, encapsulamento, herança, polimorfismo e composição | ⚪ | repositório próprio, link quando começar |
+| 3. Estruturas de dados e algoritmos | pilha, fila, recursão, ordenação, árvores e grafos | ⚪ | repositório próprio, link quando começar |
+| 4. Projetos reais | arquivos, HTTP, SQL, HTML/CSS, back-end e Docker | ⚪ | repositório próprio, link quando começar |
+| ... | o que vier depois vem aqui | | |
 
 **Etapa 1:** ▓░░░░░░░░░ 16% (7 de 43 dias)
 
