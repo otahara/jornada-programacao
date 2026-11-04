@@ -1,0 +1,15 @@
+nome = input("Seu nome: ")
+cidade = input("Sua cidade: ")
+profissao = input("Sua profissão: ")
+idade = int(input("Sua idade: "))
+separador = "=" * 30
+
+print(separador)
+print("CARTÃO DE APRESENTAÇÃO")
+print(separador)
+print(f"Nome: {nome.title()}")
+print(f"Cidade: {cidade.upper()}")
+print(f"Profissão: {profissao.lower()}")
+print(f"Idade: {idade} anos ({idade * 12} meses)")
+print(f"Caracteres do nome: {len(nome)}")
+print(separador)

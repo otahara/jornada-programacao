@@ -121,7 +121,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 4 | ✅ | 🛠️ **Git + GitHub (parte 1): o ritual diário** | Git × GitHub, `git config`, `git init`, `.gitignore` (o que é público e o que é privado), `status`, `add`, `commit`, `log`, criar o repositório no GitHub, `remote`, `push`; README de apresentação do repositório | Dias 1 a 3 publicados no seu GitHub, com o primeiro commit |
 | 5 | ✅ | 🔧 **Lendo e corrigindo erros** | treino prático, sem decorar definições: ler a mensagem de baixo para cima, achar a linha onde quebrou e a linha onde o problema começou; `SyntaxError`, `NameError`, `TypeError`, `ValueError` e `ZeroDivisionError` na prática | programas quebrados, consertados (uma pasta por erro) |
 | 6 | ✅ | Tipos e operadores aritméticos | `int`, `float`, `str`, `bool`, `type()`, `+ - * / // % **` | calculadora de operações |
-| 7 | ⚪ | Trabalhando com texto | concatenação, **f-strings**, `len`, `upper`/`lower`; 🐞 `AttributeError` | cartão de apresentação formatado |
+| 7 | ✅ | Trabalhando com texto | concatenação, **f-strings**, `len`, `upper`/`lower`; 🐞 `AttributeError` | cartão de apresentação formatado |
 | 8 | ⚪ | 🧩 **Organizador de estudos v1** | criar o repositório do projeto (repetindo o ritual do Dia 4) e juntar tudo da semana: `input`, tipos, `//` e `%` para transformar minutos em horas, f-strings | **registrar uma sessão de estudo** (matéria, minutos, questões feitas e acertadas) e mostrar o resumo formatado, com horas e percentual de acertos |
 | 9 | ⚪ | Revisão leve | cola + refazer 1 exercício + `git log` da semana | cola da semana 1 completa |
 
