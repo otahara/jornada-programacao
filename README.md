@@ -29,7 +29,7 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 4. Projetos reais | arquivos, HTTP, SQL, HTML/CSS, back-end e Docker | ⚪ | repositório próprio, link quando começar |
 | ... | o que vier depois vem aqui | | |
 
-**Etapa 1:** ▓░░░░░░░░░ 16% (7 de 43 dias)
+**Etapa 1:** ▓░░░░░░░░░ 19% (8 de 43 dias)
 
 ## Progresso
 
@@ -42,8 +42,10 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 5 | Lendo e corrigindo erros | [dia05](aulas/dia05-erros/) |
 | 6 | Tipos e operadores | [dia06](aulas/dia06-tipos-operadores/) |
 | 7 | Trabalhando com texto | [dia07](aulas/dia07-texto/) |
+| 8 | Organizador de estudos v1 | [dia08](aulas/dia08-organizador-v1/) |
 
 
 ## Links
 
 - [Cronograma](CRONOGRAMA.md): o plano dia a dia, com o status de cada dia
+- [Organizador de estudos](https://github.com/otahara/organizador-de-estudos): o projeto que cresce durante o curso
