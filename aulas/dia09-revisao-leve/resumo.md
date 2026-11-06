@@ -30,7 +30,7 @@ Revisão completa de Git e GitHub, na prática, em pastas de treino. Depois: bac
 - **Antes de apagar um `.git`, ler o prompt:** o comando apaga o histórico do repositório da pasta atual, e os commits não enviados se perdem.
 - **Commit e branch são coisas diferentes:** precisei ver os nomes andando no `git log --oneline` para entender.
 - **`git restore --staged` não funciona antes do primeiro commit:** dá `fatal: could not resolve 'HEAD'`. Antes dele, o comando é `git rm --cached`, que o próprio `git status` mostra.
-- **Ler com atenção a linha certa do `git log`:** peguei o commit logo abaixo do que procurava.
+- **O número do commit não é o número do dia:** um dia pode ter vários commits, e um commit pode ter vários dias. Para achar o commit de um dia, leio a mensagem, não conto as linhas.
 
 ---
 
@@ -111,5 +111,5 @@ Duas perguntas saíram ambíguas ou incompletas por erro do professor, que as re
 ### `git log` da semana
 
 - **Quantidade de commits:** ✅ 10.
-- **Commit que conclui o Dia 8:** ⚠️ respondi `e86b206`, que é o commit logo abaixo; o certo é `9f4410b`.
+- **Commit que conclui o Dia 8:** ⚠️ respondi `e86b206`, o oitavo commit, por associar o número do commit ao número do dia; o certo é `9f4410b`, o nono, identificado pela mensagem.
 - **Mensagem menos clara:** escolhi `fc9d403`, porque foge do padrão. ✨ O problema mais concreto é o "e": a mensagem junta dois motivos. O `2608019` é o que realmente está fora do padrão, sem o `docs:`.
