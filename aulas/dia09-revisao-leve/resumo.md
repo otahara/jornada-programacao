@@ -1,8 +1,8 @@
-# Dia 9: Revisão leve (em andamento)
+# Dia 9: Revisão leve
 
-Revisão completa de Git e GitHub, na prática, em pastas de treino. **A primeira parte está concluída.** Ainda faltam a cola da semana, refazer um exercício antigo sem olhar e o `git log` da semana.
+Revisão completa de Git e GitHub, na prática, em pastas de treino. Depois: backup das minhas anotações privadas em um repositório separado, cola da semana, um exercício antigo refeito sem olhar e leitura do `git log` da semana.
 
-## ✅ O que aprendi até aqui
+## ✅ O que aprendi neste dia
 
 - **Um repositório é uma pasta com um `.git` dentro.** Ele vale para aquela pasta e para tudo o que está dentro dela. O Git procura o `.git` na pasta atual e nas de cima.
 - **`git add` recebe um caminho:** um arquivo, vários arquivos, uma pasta ou `.`. `git add banana` só funciona se existir algo chamado `banana`.
@@ -15,6 +15,11 @@ Revisão completa de Git e GitHub, na prática, em pastas de treino. **A primeir
 - **Hash × mensagem:** `9f04043` é a identificação do commit, criada pelo Git. A mensagem é a descrição, escrita por mim.
 - **Branch é um nome que aponta para o último commit de uma linha.** Os nomes andam: `main` com o commit, `origin/main` com o `push`. Nomes separados no `git log --oneline` indicam commit ainda não enviado.
 - **`git init` na pasta errada:** o conserto é apagar só o `.git` (`Remove-Item -Recurse -Force .git`) e repetir o `init` na pasta certa. Os arquivos continuam na pasta; o que se perde é o histórico que só existia localmente.
+- **O Git para no primeiro `.git` que encontra.** Sem `.git` na pasta atual, ele sobe para a pasta de cima. Por isso, `git status` sem erro não prova que aquela pasta tem repositório próprio. `git remote -v` mostra a qual remote o repositório encontrado está ligado.
+- **Cada repositório tem os próprios remotes.** Um repositório novo não tem nenhum, mesmo dentro da pasta de outro.
+- **`git status` não lista todos os arquivos:** mostra só o que está diferente do último commit. Depois do commit, o arquivo some da lista porque não tem pendência.
+- **Backup com Git:** funciona bem para poucos arquivos de texto, com histórico, mas é manual: só está protegido o que chegou ao GitHub com `push`. Senha nunca entra, nem em repositório privado, porque quem entra na conta vê e ela continua nos commits antigos.
+- ✨ **Nome de arquivo também é documentação:** `refazer_dia03_ex04_dividir_conta.py` diz o que é e de onde veio; `refazer_ex04.py` não diz.
 - ✨ **`git add`:** rodar `git status` primeiro. Usar `.` na raiz quando tudo pertence à mesma mudança, e o nome do arquivo quando só uma parte pertence.
 
 ---
@@ -24,6 +29,8 @@ Revisão completa de Git e GitHub, na prática, em pastas de treino. **A primeir
 - **O `add .` em uma subpasta não dá erro:** adiciona só o que está lá dentro, e por isso passa despercebido.
 - **Antes de apagar um `.git`, ler o prompt:** o comando apaga o histórico do repositório da pasta atual, e os commits não enviados se perdem.
 - **Commit e branch são coisas diferentes:** precisei ver os nomes andando no `git log --oneline` para entender.
+- **`git restore --staged` não funciona antes do primeiro commit:** dá `fatal: could not resolve 'HEAD'`. Antes dele, o comando é `git rm --cached`, que o próprio `git status` mostra.
+- **Ler com atenção a linha certa do `git log`:** peguei o commit logo abaixo do que procurava.
 
 ---
 
@@ -72,3 +79,37 @@ Prova dos alertas "conferir a pasta" e "ler a mensagem de erro do Git": 1 de 2 e
 > *Perguntei:* o que é branch e se isso importa, e depois: "9f04043 e d6eee30 são commits e branch é a main? por que aparece o nome do endereço do repositório e a main em 9f04043 e não aparece em d6eee30?"
 
 Sim, são commits, e `main` é a branch. O parêntese do `log` mostra para onde cada nome aponta agora, e `origin/main` é a `main` que está no `origin`, não o endereço. Testei um commit sem enviar: os nomes ficaram separados e, depois do `push`, juntos de novo. Branches em si ficam para o Dia 37.
+
+### Backup das anotações privadas
+
+Criei um repositório privado para guardar as anotações que não vão para o repositório público. ✅ Feito com orientação passo a passo; conferi em janela anônima que o endereço dá 404.
+
+> *Perguntei:* por que aquele nome, e se esse é o jeito certo de fazer backup.
+
+O nome sugerido era genérico, e o professor reconheceu: troquei por um que indica de qual projeto é o par. Git serve para poucos arquivos de texto, mas é manual e não é lugar para senha; a alternativa seria um serviço de sincronização, que copia sozinho e guarda menos histórico. Escolhi o Git.
+
+⚠️ Não previ o que o `git remote -v` mostraria depois do `git init`, e achei que não tinha entendido as saídas. A leitura estava certa: faltava saber que o Git para no primeiro `.git` que encontra.
+
+### Cola da semana
+
+Duas perguntas saíram ambíguas ou incompletas por erro do professor, que as reescreveu com a situação completa e um item para cada pergunta.
+
+| Pergunta | Resultado | Correção |
+|---|---|---|
+| 1. `git add .` em subpasta | ✅ | Motivo e comandos certos; o prompt mostrava a pasta |
+| 2. Tirar arquivo da lista antes do primeiro commit | ⚠️ depois ✅ | Respondi `git restore --staged`, que falha nesse momento; o certo é `git rm --cached`, escrito na saída |
+| 3. Nomes no `git log` | ✅ | O Git gera o código, e a mensagem é de quem faz o commit; falta `push` para os nomes se juntarem |
+| 4. Dois motivos, dois commits | ✅ | Dois commits com os motivos certos; corrigi uma aspa sobrando. ✨ Mensagem no presente, dizendo o que mudou |
+| 5. Repositório dentro de outro | ⚠️ depois ✅ | Só completei depois da explicação do professor |
+| 6. Arquivo que some do `git status` | ⭐ | Expliquei o motivo e previ que ele volta como `modified` se for editado |
+| 7. PC queimado e senha no GitHub | ✅ | Só o que chegou com `push` volta. O motivo sobre a senha veio da explicação do professor |
+
+### Refazer um exercício sem olhar
+
+✅ Refiz o `ex04` do Dia 3 em `refazer_dia03_ex04_dividir_conta.py`, com a saída exata nos dois testes e `:.2f`, que não existia para mim no Dia 3. ✨ `quantidade_pessoas` é mais claro do que `qtde_pessoas`.
+
+### `git log` da semana
+
+- **Quantidade de commits:** ✅ 10.
+- **Commit que conclui o Dia 8:** ⚠️ respondi `e86b206`, que é o commit logo abaixo; o certo é `9f4410b`.
+- **Mensagem menos clara:** escolhi `fc9d403`, porque foge do padrão. ✨ O problema mais concreto é o "e": a mensagem junta dois motivos. O `2608019` é o que realmente está fora do padrão, sem o `docs:`.

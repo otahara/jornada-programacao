@@ -29,7 +29,7 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 4. Projetos reais | arquivos, HTTP, SQL, HTML/CSS, back-end e Docker | ⚪ | repositório próprio, link quando começar |
 | ... | o que vier depois vem aqui | | |
 
-**Etapa 1:** ▓░░░░░░░░░ 19% (8 de 43 dias)
+**Etapa 1:** ▓▓░░░░░░░░ 21% (9 de 43 dias)
 
 ## Progresso
 
@@ -43,6 +43,7 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 6 | Tipos e operadores | [dia06](aulas/dia06-tipos-operadores/) |
 | 7 | Trabalhando com texto | [dia07](aulas/dia07-texto/) |
 | 8 | Organizador de estudos v1 | [dia08](aulas/dia08-organizador-v1/) |
+| 9 | Revisão leve | [dia09](aulas/dia09-revisao-leve/) |
 
 
 ## Links
