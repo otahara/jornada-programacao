@@ -144,7 +144,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 6 | ✅ | Tipos e operadores aritméticos | `int`, `float`, `str`, `bool`, `type()`, `+ - * / // % **` | calculadora de operações |
 | 7 | ✅ | Trabalhando com texto | concatenação, **f-strings**, `len`, `upper`/`lower`; 🐞 `AttributeError` | cartão de apresentação formatado |
 | 8 | ✅ | 🧩 **Organizador de estudos v1** | criar o repositório do projeto (repetindo o ritual do Dia 4) e juntar tudo da semana: `input`, tipos, `//` e `%` para transformar minutos em horas, f-strings | **registrar uma sessão de estudo** (matéria, minutos, questões feitas e acertadas) e mostrar o resumo formatado, com horas e percentual de acertos |
-| 9 | ⚪ | Revisão leve | cola + refazer 1 exercício + `git log` da semana | cola da semana 1 completa |
+| 9 | 🟡 | Revisão leve | cola + refazer 1 exercício + `git log` da semana | cola da semana 1 completa |
 
 ## Semana 2: Decisão (o programa começa a "pensar")
 
