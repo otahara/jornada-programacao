@@ -151,7 +151,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | Dia | Status | Tema | O que você vai aprender | Entrega |
 |---|---|---|---|---|
 | 10 | ✅ | Comparações | `== != > < >= <=`, valores `True`/`False` | exercícios de "verdadeiro ou falso?" |
-| 11 | ⚪ | `if` / `else` | decisão simples, **indentação**, bloco de código; 🐞 `IndentationError` | par ou ímpar, maior de idade |
+| 11 | ✅ | `if` / `else` | decisão simples, **indentação**, bloco de código; 🐞 `IndentationError` | par ou ímpar, maior de idade |
 | 12 | ⚪ | `elif` | várias condições em sequência, a ordem importa | faixa etária, conceito de nota (A/B/C) |
 | 13 | ⚪ | Operadores lógicos | `and`, `or`, `not`, tabela-verdade | validação de login (usuário **e** senha) |
 | 14 | ⚪ | Treino de decisão | combinar tudo, decisão dentro de decisão | maior de 3 números, triângulo válido |
