@@ -100,6 +100,7 @@ Código que funciona é o **mínimo**. Do primeiro exercício ao projeto, todo c
 ### Regras do cronograma
 - **"Dia" é uma sessão de estudo, não um dia do calendário.** Se pular um dia, continue de onde parou. Nada de culpa.
 - **Só avança quando entregar os exercícios do dia.** Se travar, o mesmo dia pode durar duas sessões.
+- **Dias de reforço (xx.1, xx.2...):** quando um assunto precisa de mais treino, entra um reforço logo depois do dia em que ele apareceu (por exemplo, 14.1 e 14.2, para treinar lógica depois do Dia 14). Ele é acrescentado aqui **quando acontece**, quantas vezes for preciso, e não muda o número dos outros dias.
 - **Todo dia começa com revisão sem consulta:** perguntas sobre os dias anteriores **e** um aquecimento (teste de mesa ou exercício básico) que sirva de **ponte para o tema do dia**: o resultado ou a dificuldade dele leva naturalmente ao conceito novo.
 - **O último dia de cada semana é de revisão leve:** reler e completar a **cola** (um caderno de anotações escrito com as suas palavras) e refazer **um** exercício antigo sem olhar. Pode ser curto.
 - **Toda semana tem dia de projeto (🧩):** o Organizador de estudos ganha uma versão nova com o que foi visto naquela semana.
@@ -154,7 +155,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 11 | ✅ | `if` / `else` | decisão simples, **indentação**, bloco de código; 🐞 `IndentationError` | par ou ímpar, maior de idade |
 | 12 | ✅ | `elif` | várias condições em sequência, a ordem importa | faixa etária, conceito de nota (A/B/C) |
 | 13 | ✅ | Operadores lógicos | `and`, `or`, `not`, tabela-verdade | validação de login (usuário **e** senha) |
-| 14 | ⚪ | Treino de decisão | combinar tudo, decisão dentro de decisão | maior de 3 números, triângulo válido |
+| 14 | ✅ | Treino de decisão | combinar tudo, decisão dentro de decisão | maior de 3 números, triângulo válido |
 | 15 | ⚪ | 🧩 **Organizador de estudos v2** | decisão aplicada ao projeto | **classificar o desempenho** da sessão (ex.: abaixo de 60% de acertos = revisar logo), conferir a meta de minutos do dia e recusar dados impossíveis (mais acertos do que questões) |
 | 16 | ⚪ | Revisão leve | cola + refazer 1 exercício + `git log` da semana | cola da semana 2 completa |
 

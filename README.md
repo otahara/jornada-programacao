@@ -29,7 +29,7 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 4. Projetos reais | arquivos, HTTP, SQL, HTML/CSS, back-end e Docker | ⚪ | repositório próprio, link quando começar |
 | ... | o que vier depois vem aqui | | |
 
-**Etapa 1:** ▓▓▓░░░░░░░ 30% (13 de 43 dias)
+**Etapa 1:** ▓▓▓░░░░░░░ 32% (14 de 43 dias)
 
 ## Progresso
 
@@ -48,7 +48,22 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 11 | `if` / `else` | [dia11](aulas/dia11-if-else/) |
 | 12 | `elif` | [dia12](aulas/dia12-elif/) |
 | 13 | Operadores lógicos | [dia13](aulas/dia13-operadores-logicos/) |
+| 14 | Treino de decisão | [dia14](aulas/dia14-treino-decisao/) |
 
+## Decisões da jornada
+
+| Data | Decisão | Por quê |
+|---|---|---|
+| 30/10/2026 | Aprender com Python | É a linguagem de que eu mais gosto, e quero aprender a parte técnica para depois conseguir ir para qualquer outra. |
+| 01/11/2026 | Git e GitHub logo no Dia 4 | Quero publicar e documentar a jornada desde o começo, usando o Git de verdade no terminal. |
+| 01/11/2026 | Repositório público, com anotações pessoais fora dele | O cronograma e os resumos ficam abertos para inspirar quem estuda sem pagar curso. O que é pessoal fica guardado. |
+| 01/11/2026 | Etapa 1 ampliada, com debugger e testes | Pensando em entrevistas e concursos: não basta o programa rodar, preciso saber achar erros e provar que o código funciona. |
+| 02/11/2026 | Um dia inteiro para ler e corrigir erros | Eu confundia os tipos de erro e preferi parar e treinar na prática até entender, em vez de decorar definições. |
+| 02/11/2026 | Um único projeto que cresce: o Organizador de estudos | Quero construir algo real desde já, que mostre a minha evolução e sirva para qualquer pessoa que estuda. |
+| 02/11/2026 | Boas práticas desde o primeiro dia | Código que funciona é o mínimo. Quero que as boas práticas virem hábito, como o `snake_case`. |
+| 03/11/2026 | Relatório do professor público em cada resumo | Quero um registro completo das minhas respostas e correções, inclusive dos erros. |
+| 04/11/2026 | Orientação a Objetos como Etapa 2 | Aprender classes antes das estruturas de dados, que na Etapa 3 vão ser construídas como classes. |
+| 10/11/2026 | Dias de reforço (14.1, 14.2...) | Percebi que travo para montar a lógica de um problema com várias peças. Em vez de seguir em frente, decidi parar e treinar até ficar firme. E deixei público, porque o treino também faz parte da jornada. |
 
 ## Links
 
