@@ -49,6 +49,7 @@ A jornada está dividida em etapas. Esta é apenas a primeira, e não sei quanta
 | 12 | `elif` | [dia12](aulas/dia12-elif/) |
 | 13 | Operadores lógicos | [dia13](aulas/dia13-operadores-logicos/) |
 | 14 | Treino de decisão | [dia14](aulas/dia14-treino-decisao/) |
+| 14.1 | ➕ Reforço de lógica: o plano em 4 partes | [dia14.1](aulas/dia14-1-logica/) |
 
 ## Decisões da jornada
 

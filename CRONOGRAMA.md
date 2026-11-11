@@ -156,6 +156,7 @@ Legenda: ⚪ não iniciado · 🟡 em andamento · ✅ concluído · 🛠️ fer
 | 12 | ✅ | `elif` | várias condições em sequência, a ordem importa | faixa etária, conceito de nota (A/B/C) |
 | 13 | ✅ | Operadores lógicos | `and`, `or`, `not`, tabela-verdade | validação de login (usuário **e** senha) |
 | 14 | ✅ | Treino de decisão | combinar tudo, decisão dentro de decisão | maior de 3 números, triângulo válido |
+| 14.1 | ✅ | ➕ Reforço de lógica | regra do cliente × regra do mundo real, dois `if` × `elif`, **o plano em 4 partes** (dados, contas, decisões, depende?) | plano do estacionamento em 4 partes |
 | 15 | ⚪ | 🧩 **Organizador de estudos v2** | decisão aplicada ao projeto | **classificar o desempenho** da sessão (ex.: abaixo de 60% de acertos = revisar logo), conferir a meta de minutos do dia e recusar dados impossíveis (mais acertos do que questões) |
 | 16 | ⚪ | Revisão leve | cola + refazer 1 exercício + `git log` da semana | cola da semana 2 completa |
 
